@@ -49,7 +49,7 @@ steps:
   displayName: 'Run Unit Tests - $(buildConfiguration)'
   inputs:
 	  command: 'test'
-	  arguments: '--configuration $(buildConfiguration) --no-build'
+	  arguments: '--no-build --configuration $(buildConfiguration)'
 	  publishTestResult: true
 	  projects: '**/*.Tests.csproj'
 
